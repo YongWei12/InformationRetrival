@@ -2,7 +2,7 @@
 <!-- Solr managed schema - automatically generated - DO NOT EDIT -->
 <schema name="default-config" version="1.6">
   <uniqueKey>id</uniqueKey>
-  <fieldType name="_nest_path_" class="solr.NestPathField" omitTermFreqAndPositions="true" omitNorms="true" maxCharsForDocValues="-1" stored="false" multiValued="false"/>
+  <fieldType name="_nest_path_" class="solr.NestPathField" maxCharsForDocValues="-1" omitNorms="true" omitTermFreqAndPositions="true" stored="false" multiValued="false"/>
   <fieldType name="ancestor_path" class="solr.TextField">
     <analyzer type="index">
       <tokenizer class="solr.KeywordTokenizerFactory"/>
@@ -452,6 +452,7 @@
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
   <field name="cashtags" type="text_general"/>
+  <field name="catch_all" type="text_en" multiValued="true" indexed="true" stored="true"/>
   <field name="conversation_id" type="plongs"/>
   <field name="created_at" type="text_general"/>
   <field name="date" type="pdates"/>
@@ -547,6 +548,11 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
+  <copyField source="language" dest="catch_all"/>
+  <copyField source="link" dest="catch_all"/>
+  <copyField source="reply_to" dest="catch_all"/>
+  <copyField source="tweet" dest="catch_all"/>
+  <copyField source="username" dest="catch_all"/>
   <copyField source="hashtags" dest="hashtags_str" maxChars="256"/>
   <copyField source="timezone" dest="timezone_str" maxChars="256"/>
   <copyField source="link" dest="link_str" maxChars="256"/>

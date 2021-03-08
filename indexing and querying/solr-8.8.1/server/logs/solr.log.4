@@ -1,0 +1,907 @@
+2021-03-08 10:11:58.570 INFO  (main) [   ] o.e.j.u.log Logging initialized @961ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-03-08 10:11:58.717 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 15.0.2+7-27
+2021-03-08 10:11:58.740 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/yongw/Documents/InformationRetrival/indexing%20and%20querying/solr-8.8.1/server/contexts/] at interval 0
+2021-03-08 10:11:59.315 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-03-08 10:11:59.322 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-03-08 10:11:59.322 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-03-08 10:11:59.324 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-03-08 10:11:59.373 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-08 10:11:59.377 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.1
+2021-03-08 10:11:59.377 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-03-08 10:11:59.377 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1
+2021-03-08 10:11:59.377 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-03-08T10:11:59.377545600Z
+2021-03-08 10:11:59.388 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr
+2021-03-08 10:11:59.389 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\solr.xml
+2021-03-08 10:11:59.444 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66, but no JMX reporters were configured - adding default JMX reporter.
+2021-03-08 10:11:59.800 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-03-08 10:11:59.947 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@3ae0b770[provider=null,keyStore=null,trustStore=null]
+2021-03-08 10:11:59.947 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@3ae0b770[provider=null,keyStore=null,trustStore=null]
+2021-03-08 10:12:00.059 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1835d3ed[provider=null,keyStore=null,trustStore=null]
+2021-03-08 10:12:00.059 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1835d3ed[provider=null,keyStore=null,trustStore=null]
+2021-03-08 10:12:00.095 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-03-08 10:12:00.195 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-03-08 10:12:00.196 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-03-08 10:12:00.247 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 10:12:00.247 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 10:12:00.251 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 10:12:00.278 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr
+2021-03-08 10:12:00.279 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [Search_Twitter]
+2021-03-08 10:12:00.304 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 10:12:00.420 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 10:12:00.639 WARN  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 10:12:00.639 WARN  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 10:12:00.639 WARN  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 10:12:00.639 WARN  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 10:12:00.639 WARN  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 10:12:00.654 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@350ec41e{/solr,file:///C:/Users/yongw/Documents/InformationRetrival/indexing%20and%20querying/solr-8.8.1/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server/solr-webapp/webapp}
+2021-03-08 10:12:00.662 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4aa83f4f{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-03-08 10:12:00.662 INFO  (main) [   ] o.e.j.s.Server Started @3054ms
+2021-03-08 10:12:00.799 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 10:12:00.806 INFO  (qtp1217207511-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=75
+2021-03-08 10:12:00.889 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.c.CoreContainer Creating SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf, trusted=true
+2021-03-08 10:12:00.900 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 10:12:00.912 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 10:12:01.326 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-08 10:12:01.326 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-08 10:12:01.342 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 10:12:01.342 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 10:12:01.497 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 10:12:01.507 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 10:12:01.512 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 10:12:01.522 INFO  (coreLoadExecutor-13-thread-1) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 10:12:01.536 INFO  (searcherExecutor-15-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 10:12:01.537 INFO  (searcherExecutor-15-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 10:12:01.542 INFO  (searcherExecutor-15-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 10:12:26.650 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=1
+2021-03-08 10:12:26.654 INFO  (qtp1217207511-26) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=4
+2021-03-08 10:12:26.660 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=10
+2021-03-08 10:12:26.710 INFO  (qtp1217207511-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=60
+2021-03-08 10:12:26.741 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=30
+2021-03-08 10:13:23.047 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:13:23.049 INFO  (qtp1217207511-44) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:13:23.049 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=2
+2021-03-08 10:13:23.089 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=42
+2021-03-08 10:13:23.123 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=14
+2021-03-08 10:13:26.532 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:13:26.532 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:13:26.534 INFO  (qtp1217207511-46) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=2
+2021-03-08 10:13:26.571 INFO  (qtp1217207511-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=39
+2021-03-08 10:13:26.600 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=8
+2021-03-08 10:13:39.989 INFO  (qtp1217207511-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:13:39.990 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:13:39.992 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=2
+2021-03-08 10:13:40.030 INFO  (qtp1217207511-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=40
+2021-03-08 10:13:40.047 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=5
+2021-03-08 10:14:08.628 INFO  (qtp1217207511-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:14:08.628 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:14:08.629 INFO  (qtp1217207511-46) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=2
+2021-03-08 10:14:08.668 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=40
+2021-03-08 10:14:08.696 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=5
+2021-03-08 10:14:36.661 INFO  (qtp1217207511-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:14:36.662 INFO  (qtp1217207511-26) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:14:36.662 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=1
+2021-03-08 10:14:36.702 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=41
+2021-03-08 10:14:36.728 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=5
+2021-03-08 10:14:45.850 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:14:45.850 INFO  (qtp1217207511-44) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198346628} status=0 QTime=0
+2021-03-08 10:14:45.851 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198346628} status=0 QTime=2
+2021-03-08 10:14:45.891 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=41
+2021-03-08 10:14:45.910 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198346628} status=0 QTime=3
+2021-03-08 10:14:53.149 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198346581} status=0 QTime=0
+2021-03-08 10:14:53.185 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198346581} status=0 QTime=35
+2021-03-08 10:14:54.561 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615198493126} hits=5406 status=0 QTime=24
+2021-03-08 10:15:55.044 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:+COVID+as+the+administration's+#1+priority,+restrictions+being+lifted.+Doses+now+being+delivered+to+New+Yorkers+at&_=1615198493126} hits=4909 status=0 QTime=22
+2021-03-08 10:16:48.105 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:+COVID+as+the+administration's+#1+priority,+restrictions+being+lifted.+Doses+now+being+delivered+to+New+Yorkers+at} hits=4909 status=0 QTime=3
+2021-03-08 10:18:31.246 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:Covid+Vaccine+will+be+provided+free+of+cost+in+Delhi.+#??????++#vaccine+#Covid&_=1615198493126} hits=4909 status=0 QTime=3
+2021-03-08 10:18:47.075 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:Covid+Vaccine+will+be+provided+free+of+cost+in+Delhi.+#??????++#vaccine+#Covid&_=1615198493126} hits=4909 status=0 QTime=1
+2021-03-08 10:18:47.602 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:Covid+Vaccine+will+be+provided+free+of+cost+in+Delhi.+#??????++#vaccine+#Covid&_=1615198493126} hits=4909 status=0 QTime=1
+2021-03-08 10:18:47.802 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:Covid+Vaccine+will+be+provided+free+of+cost+in+Delhi.+#??????++#vaccine+#Covid&_=1615198493126} hits=4909 status=0 QTime=1
+2021-03-08 10:19:25.457 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=user_id:871357511860854785&_=1615198493126} hits=1 status=0 QTime=8
+2021-03-08 10:19:37.224 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:871357511860854785&_=1615198493126} hits=0 status=0 QTime=0
+2021-03-08 10:19:40.450 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=tweet:Covid+Vaccine+will+be+provided+free+of+cost+in+Delhi.&_=1615198493126} hits=4909 status=0 QTime=3
+2021-03-08 10:20:14.799 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=name:+John+Simpson&_=1615198493126} hits=34 status=0 QTime=1
+2021-03-08 10:21:47.012 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=name:+John+Simpson} hits=34 status=0 QTime=0
+2021-03-08 10:22:48.407 INFO  (qtp1217207511-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:22:48.446 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=38
+2021-03-08 10:22:50.494 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:22:50.497 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198970476} status=0 QTime=1
+2021-03-08 10:22:50.498 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198970476} status=0 QTime=0
+2021-03-08 10:22:50.524 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198970476} status=0 QTime=3
+2021-03-08 10:22:50.538 INFO  (qtp1217207511-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=44
+2021-03-08 10:22:54.901 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:22:54.902 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615198970476} status=0 QTime=0
+2021-03-08 10:22:54.903 INFO  (qtp1217207511-46) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198970476} status=0 QTime=1
+2021-03-08 10:22:54.927 INFO  (qtp1217207511-21) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615198970476} status=0 QTime=3
+2021-03-08 10:22:54.941 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=40
+2021-03-08 10:23:40.251 INFO  (qtp1217207511-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:23:40.312 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=61
+2021-03-08 10:23:40.318 INFO  (qtp1217207511-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=67
+2021-03-08 10:23:55.835 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:23:55.836 INFO  (qtp1217207511-19) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1615198970476} status=0 QTime=0
+2021-03-08 10:23:55.839 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1615198968339&ts=1615198968339} status=503 QTime=1
+2021-03-08 10:23:55.841 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/replication params={wt=json&command=details&_=1615199035823} status=0 QTime=5
+2021-03-08 10:23:55.903 INFO  (qtp1217207511-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=68
+2021-03-08 10:23:55.906 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/system params={wt=json&_=1615199035823} status=0 QTime=68
+2021-03-08 10:23:57.651 INFO  (qtp1217207511-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:23:57.653 INFO  (qtp1217207511-46) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198970476} status=0 QTime=1
+2021-03-08 10:23:57.687 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=36
+2021-03-08 10:23:58.722 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:23:58.723 INFO  (qtp1217207511-21) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615198970476} status=0 QTime=1
+2021-03-08 10:23:58.757 INFO  (qtp1217207511-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=35
+2021-03-08 10:23:59.693 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:23:59.694 INFO  (qtp1217207511-46) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/file params={wt=json&_=1615199039688} status=0 QTime=0
+2021-03-08 10:23:59.728 INFO  (qtp1217207511-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=34
+2021-03-08 10:24:00.007 INFO  (qtp1217207511-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:24:00.028 INFO  (qtp1217207511-21) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1615199040002} status=0 QTime=20
+2021-03-08 10:24:00.044 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=36
+2021-03-08 10:24:02.570 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615198968339} status=0 QTime=0
+2021-03-08 10:24:02.605 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615198968339} status=0 QTime=35
+2021-03-08 10:24:03.967 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615198968385} hits=5406 status=0 QTime=0
+2021-03-08 10:24:04.609 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*} hits=5406 status=0 QTime=0
+2021-03-08 10:24:09.343 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/schema/fields params={} status=0 QTime=2
+2021-03-08 13:11:30.263 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*} hits=5406 status=0 QTime=1
+2021-03-08 13:11:31.318 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*} hits=5406 status=0 QTime=0
+2021-03-08 13:11:31.986 INFO  (qtp1217207511-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209091919} status=0 QTime=0
+2021-03-08 13:11:32.025 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209091919} status=0 QTime=37
+2021-03-08 13:14:08.428 ERROR (qtp1217207511-45) [   ] o.a.s.a.V2HttpCall >> path: '/cores/search_twitter/schema'
+2021-03-08 13:14:08.428 ERROR (qtp1217207511-45) [   ] o.a.s.a.V2HttpCall Error in init() => org.apache.solr.common.SolrException: no core retrieved for search_twitter
+	at org.apache.solr.api.V2HttpCall.init(V2HttpCall.java:139)
+org.apache.solr.common.SolrException: no core retrieved for search_twitter
+	at org.apache.solr.api.V2HttpCall.init(V2HttpCall.java:139) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:525) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-03-08 13:14:31.463 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf\managed-schema
+2021-03-08 13:14:31.516 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 13:14:31.555 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 13:14:31.565 WARN  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 13:14:31.565 WARN  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 13:14:31.565 WARN  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 13:14:31.565 WARN  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 13:14:31.565 WARN  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 13:14:31.631 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 13:14:31.692 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.c.CoreContainer Reloading SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf
+2021-03-08 13:14:31.712 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 13:14:31.712 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 13:14:31.766 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 13:14:31.766 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 13:14:31.771 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 13:14:31.771 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 13:14:31.771 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 13:14:31.772 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 13:14:31.778 INFO  (searcherExecutor-21-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:14:31.778 INFO  (searcherExecutor-21-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 13:14:31.782 INFO  (searcherExecutor-21-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:14:31.791 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-03-08 13:14:31.802 INFO  (qtp1217207511-47) [   ] o.a.s.c.SolrCore [Search_Twitter]  CLOSING SolrCore org.apache.solr.core.SolrCore@1bbdf45
+2021-03-08 13:14:31.802 INFO  (qtp1217207511-47) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Search_Twitter tag=SolrCore@1bbdf45
+2021-03-08 13:14:31.803 INFO  (qtp1217207511-47) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@50fd38ec: rootName = null, domain = solr.core.Search_Twitter, service url = null, agent id = null] for registry solr.core.Search_Twitter/com.codahale.metrics.MetricRegistry@8800674
+2021-03-08 13:14:31.804 INFO  (searcherExecutor-21-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:14:31.807 INFO  (searcherExecutor-21-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 2 ms
+2021-03-08 13:14:38.916 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:14:38.963 INFO  (qtp1217207511-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=47
+2021-03-08 13:14:40.026 INFO  (qtp1217207511-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:14:40.027 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:14:40.028 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:14:40.057 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=5
+2021-03-08 13:14:40.083 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=56
+2021-03-08 13:14:53.026 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:14:53.026 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:14:53.027 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:14:53.070 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=44
+2021-03-08 13:14:53.078 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=3
+2021-03-08 13:16:43.526 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf\managed-schema
+2021-03-08 13:16:43.561 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 13:16:43.613 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 13:16:43.619 WARN  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 13:16:43.619 WARN  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 13:16:43.619 WARN  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 13:16:43.619 WARN  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 13:16:43.619 WARN  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 13:16:43.677 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 13:16:43.730 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.CoreContainer Reloading SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf
+2021-03-08 13:16:43.742 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 13:16:43.742 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 13:16:43.782 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 13:16:43.782 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 13:16:43.786 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 13:16:43.786 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 13:16:43.786 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 13:16:43.787 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 13:16:43.791 INFO  (searcherExecutor-26-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:16:43.791 INFO  (searcherExecutor-26-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 13:16:43.793 INFO  (searcherExecutor-26-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:16:43.798 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-03-08 13:16:43.807 INFO  (searcherExecutor-26-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:16:43.807 INFO  (qtp1217207511-52) [   ] o.a.s.c.SolrCore [Search_Twitter]  CLOSING SolrCore org.apache.solr.core.SolrCore@4de74bcf
+2021-03-08 13:16:43.807 INFO  (qtp1217207511-52) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Search_Twitter tag=SolrCore@4de74bcf
+2021-03-08 13:16:43.807 INFO  (qtp1217207511-52) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6b3ae07c: rootName = null, domain = solr.core.Search_Twitter, service url = null, agent id = null] for registry solr.core.Search_Twitter/com.codahale.metrics.MetricRegistry@8800674
+2021-03-08 13:16:43.809 INFO  (searcherExecutor-26-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:17:01.916 INFO  (qtp1217207511-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:17:01.954 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=36
+2021-03-08 13:17:03.130 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615209278893} hits=5406 status=0 QTime=1
+2021-03-08 13:17:20.115 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:17:20.117 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:17:20.118 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:17:20.145 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=3
+2021-03-08 13:17:20.158 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=43
+2021-03-08 13:17:22.990 INFO  (qtp1217207511-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:17:22.990 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:17:22.991 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:17:23.016 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=2
+2021-03-08 13:17:23.030 INFO  (qtp1217207511-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=40
+2021-03-08 13:19:01.611 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:19:01.646 INFO  (qtp1217207511-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=35
+2021-03-08 13:19:17.619 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:31.340 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*.*&_=1615209278893} hits=0 status=0 QTime=10
+2021-03-08 13:19:33.415 INFO  (qtp1217207511-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:19:33.417 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1615209573404} status=0 QTime=0
+2021-03-08 13:19:33.444 INFO  (qtp1217207511-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:19:33.446 INFO  (qtp1217207511-51) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1615209573404} status=0 QTime=0
+2021-03-08 13:19:33.463 INFO  (qtp1217207511-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=48
+2021-03-08 13:19:33.487 INFO  (qtp1217207511-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=43
+2021-03-08 13:19:35.540 INFO  (qtp1217207511-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:19:35.573 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=33
+2021-03-08 13:19:37.289 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615209278893} hits=5406 status=0 QTime=0
+2021-03-08 13:19:51.210 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=1
+2021-03-08 13:19:52.306 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:53.064 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:53.272 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:53.848 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:54.008 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:19:56.131 INFO  (qtp1217207511-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:19:56.134 INFO  (qtp1217207511-52) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:19:56.134 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:19:56.160 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=3
+2021-03-08 13:19:56.175 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=44
+2021-03-08 13:20:05.477 INFO  (qtp1217207511-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:20:05.509 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=32
+2021-03-08 13:20:13.024 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:+jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:20:14.168 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:+jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:20:14.528 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:+jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:20:14.712 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=catch_all:+jtfinch&_=1615209278893} hits=0 status=0 QTime=0
+2021-03-08 13:20:24.687 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:+jtfinch&_=1615209278893} hits=1 status=0 QTime=1
+2021-03-08 13:24:02.265 INFO  (qtp1217207511-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:24:02.265 INFO  (qtp1217207511-56) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:24:02.266 INFO  (qtp1217207511-20) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:24:02.290 INFO  (qtp1217207511-42) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=3
+2021-03-08 13:24:02.310 INFO  (qtp1217207511-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=45
+2021-03-08 13:24:09.093 INFO  (qtp1217207511-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:24:09.093 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615209280006} status=0 QTime=0
+2021-03-08 13:24:09.094 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615209280006} status=0 QTime=1
+2021-03-08 13:24:09.123 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615209280006} status=0 QTime=2
+2021-03-08 13:24:09.135 INFO  (qtp1217207511-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=42
+2021-03-08 13:25:53.244 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf\managed-schema
+2021-03-08 13:25:53.314 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 13:25:53.342 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 13:25:53.347 WARN  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 13:25:53.347 WARN  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 13:25:53.347 WARN  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 13:25:53.347 WARN  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 13:25:53.347 WARN  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 13:25:53.405 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 13:25:53.455 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.CoreContainer Reloading SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf
+2021-03-08 13:25:53.465 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 13:25:53.465 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 13:25:53.498 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 13:25:53.498 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 13:25:53.502 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 13:25:53.502 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 13:25:53.502 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 13:25:53.503 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 13:25:53.506 INFO  (searcherExecutor-31-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:25:53.506 INFO  (searcherExecutor-31-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 13:25:53.508 INFO  (searcherExecutor-31-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:25:53.512 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-03-08 13:25:53.521 INFO  (searcherExecutor-31-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:25:53.521 INFO  (qtp1217207511-45) [   ] o.a.s.c.SolrCore [Search_Twitter]  CLOSING SolrCore org.apache.solr.core.SolrCore@43b268aa
+2021-03-08 13:25:53.521 INFO  (qtp1217207511-45) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Search_Twitter tag=SolrCore@43b268aa
+2021-03-08 13:25:53.521 INFO  (qtp1217207511-45) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6cc34cf3: rootName = null, domain = solr.core.Search_Twitter, service url = null, agent id = null] for registry solr.core.Search_Twitter/com.codahale.metrics.MetricRegistry@8800674
+2021-03-08 13:25:53.523 INFO  (searcherExecutor-31-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:26:00.787 INFO  (qtp1217207511-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615209278846} status=0 QTime=0
+2021-03-08 13:26:00.823 INFO  (qtp1217207511-47) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615209278846} status=0 QTime=36
+2021-03-08 13:26:02.191 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615209278893} hits=5406 status=0 QTime=1
+2021-03-08 13:27:11.394 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf\managed-schema
+2021-03-08 13:27:11.416 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 13:27:11.452 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 13:27:11.456 WARN  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 13:27:11.456 WARN  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 13:27:11.456 WARN  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 13:27:11.456 WARN  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 13:27:11.456 WARN  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 13:27:11.512 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 13:27:11.562 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.CoreContainer Reloading SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf
+2021-03-08 13:27:11.574 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 13:27:11.574 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 13:27:11.615 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 13:27:11.615 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 13:27:11.618 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 13:27:11.619 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 13:27:11.619 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 13:27:11.619 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 13:27:11.622 INFO  (searcherExecutor-36-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:27:11.622 INFO  (searcherExecutor-36-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 13:27:11.624 INFO  (searcherExecutor-36-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:27:11.629 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-03-08 13:27:11.639 INFO  (searcherExecutor-36-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:27:11.639 INFO  (qtp1217207511-49) [   ] o.a.s.c.SolrCore [Search_Twitter]  CLOSING SolrCore org.apache.solr.core.SolrCore@20b22028
+2021-03-08 13:27:11.640 INFO  (qtp1217207511-49) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Search_Twitter tag=SolrCore@20b22028
+2021-03-08 13:27:11.640 INFO  (qtp1217207511-49) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1041b209: rootName = null, domain = solr.core.Search_Twitter, service url = null, agent id = null] for registry solr.core.Search_Twitter/com.codahale.metrics.MetricRegistry@8800674
+2021-03-08 13:27:11.641 INFO  (searcherExecutor-36-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:27:56.512 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf\managed-schema
+2021-03-08 13:27:56.553 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-08 13:27:56.582 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-08 13:27:56.587 WARN  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-08 13:27:56.587 WARN  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-08 13:27:56.587 WARN  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-08 13:27:56.587 WARN  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-08 13:27:56.587 WARN  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-08 13:27:56.643 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-08 13:27:56.689 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.CoreContainer Reloading SolrCore 'Search_Twitter' using configuration from instancedir C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf
+2021-03-08 13:27:56.698 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.Search_Twitter' (registry 'solr.core.Search_Twitter') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3ad83a66
+2021-03-08 13:27:56.698 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.SolrCore [[Search_Twitter] ] Opening new SolrCore at [C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf], dataDir=[C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\data\]
+2021-03-08 13:27:56.750 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-08 13:27:56.750 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-08 13:27:56.753 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\yongw\Documents\InformationRetrival\indexing and querying\solr-8.8.1\server\solr\configsets\Search_Twitter\conf\conf
+2021-03-08 13:27:56.753 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-08 13:27:56.754 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-08 13:27:56.754 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-08 13:27:56.757 INFO  (searcherExecutor-41-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:27:56.757 INFO  (searcherExecutor-41-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-08 13:27:56.759 INFO  (searcherExecutor-41-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:27:56.763 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-03-08 13:27:56.772 INFO  (searcherExecutor-41-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-08 13:27:56.772 INFO  (qtp1217207511-23) [   ] o.a.s.c.SolrCore [Search_Twitter]  CLOSING SolrCore org.apache.solr.core.SolrCore@75e76b18
+2021-03-08 13:27:56.772 INFO  (qtp1217207511-23) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.Search_Twitter tag=SolrCore@75e76b18
+2021-03-08 13:27:56.772 INFO  (qtp1217207511-23) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2a475639: rootName = null, domain = solr.core.Search_Twitter, service url = null, agent id = null] for registry solr.core.Search_Twitter/com.codahale.metrics.MetricRegistry@8800674
+2021-03-08 13:27:56.774 INFO  (searcherExecutor-41-thread-1-processing-x:Search_Twitter) [   x:Search_Twitter] o.a.s.c.SolrCore [Search_Twitter]  Registered new searcher autowarm time: 0 ms
+2021-03-08 13:28:16.365 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615209278893} hits=5406 status=0 QTime=1
+2021-03-08 13:28:17.538 INFO  (qtp1217207511-47) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615209278893} hits=5406 status=0 QTime=0
+2021-03-08 13:28:19.685 INFO  (qtp1217207511-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:28:19.725 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=40
+2021-03-08 13:28:20.732 INFO  (qtp1217207511-70) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615210099660} hits=5406 status=0 QTime=0
+2021-03-08 13:28:48.204 INFO  (qtp1217207511-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:28:48.204 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615210128180} status=0 QTime=0
+2021-03-08 13:28:48.206 INFO  (qtp1217207511-64) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615210128180} status=0 QTime=1
+2021-03-08 13:28:48.246 INFO  (qtp1217207511-22) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615210128180} status=0 QTime=3
+2021-03-08 13:28:48.250 INFO  (qtp1217207511-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=46
+2021-03-08 13:28:51.167 INFO  (qtp1217207511-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:28:51.167 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/config params={wt=json&_=1615210128180} status=0 QTime=0
+2021-03-08 13:28:51.168 INFO  (qtp1217207511-49) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615210128180} status=0 QTime=1
+2021-03-08 13:28:51.189 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1615210128180} status=0 QTime=2
+2021-03-08 13:28:51.208 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=41
+2021-03-08 13:32:25.006 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:32:25.009 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/file params={wt=json&_=1615210345000} status=0 QTime=1
+2021-03-08 13:32:25.045 INFO  (qtp1217207511-70) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=37
+2021-03-08 13:32:29.907 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:32:29.908 INFO  (qtp1217207511-45) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/file params={wt=json&_=1615210345000} status=0 QTime=0
+2021-03-08 13:32:29.910 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/file params={file=managed-schema&contentType=text/plain;charset%3Dutf-8&wt=json&_=1615210345000} status=0 QTime=1
+2021-03-08 13:32:29.945 INFO  (qtp1217207511-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=37
+2021-03-08 13:33:50.119 INFO  (qtp1217207511-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:33:50.158 INFO  (qtp1217207511-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=38
+2021-03-08 13:33:51.737 INFO  (qtp1217207511-51) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=*:*&_=1615210099660} hits=5406 status=0 QTime=0
+2021-03-08 13:34:38.242 ERROR (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:34:38.242 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=draconiclogic&df=catch_all} status=400 QTime=2
+2021-03-08 13:35:07.329 ERROR (qtp1217207511-70) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:35:07.329 INFO  (qtp1217207511-70) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:draconiclogic} status=400 QTime=0
+2021-03-08 13:35:12.652 ERROR (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:35:12.652 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:+draconiclogic} status=400 QTime=0
+2021-03-08 13:35:55.373 ERROR (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:35:55.374 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:+lareds60} status=400 QTime=0
+2021-03-08 13:36:00.317 ERROR (qtp1217207511-55) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:36:00.317 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60} status=400 QTime=0
+2021-03-08 13:36:01.125 ERROR (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:36:01.125 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60} status=400 QTime=0
+2021-03-08 13:36:01.871 ERROR (qtp1217207511-55) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:36:01.871 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60} status=400 QTime=0
+2021-03-08 13:36:02.651 ERROR (qtp1217207511-23) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:36:02.651 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60} status=400 QTime=0
+2021-03-08 13:36:04.125 ERROR (qtp1217207511-55) [   x:Search_Twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown top-level key in JSON request : email
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:238)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:165)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:213)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2646)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2021-03-08 13:36:04.125 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60} status=400 QTime=0
+2021-03-08 13:36:12.055 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60&_=1615210099660} hits=2 status=0 QTime=1
+2021-03-08 13:36:30.589 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=username:lareds60&df=catch_all&_=1615210099660} hits=2 status=0 QTime=0
+2021-03-08 13:36:40.684 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:41.524 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:41.700 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:42.060 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:42.244 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:42.596 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:42.764 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:42.948 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:43.140 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:43.340 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:43.612 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:43.812 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:44.276 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:44.508 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:46.300 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:46.492 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:46.819 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:46.988 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:47.259 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:47.444 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:47.788 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:48.140 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:48.323 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:48.539 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:49.260 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:49.435 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:49.651 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:49.812 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:36:50.196 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/select params={q=lareds60&df=catch_all&_=1615210099660} hits=0 status=0 QTime=0
+2021-03-08 13:41:15.862 INFO  (qtp1217207511-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:41:15.865 INFO  (qtp1217207511-43) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1615210128180} status=0 QTime=1
+2021-03-08 13:41:15.899 INFO  (qtp1217207511-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=35
+2021-03-08 13:41:16.798 INFO  (qtp1217207511-72) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:41:16.798 INFO  (qtp1217207511-70) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1615210876787} status=0 QTime=0
+2021-03-08 13:41:16.827 INFO  (qtp1217207511-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:41:16.829 INFO  (qtp1217207511-60) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1615210876787} status=0 QTime=0
+2021-03-08 13:41:16.846 INFO  (qtp1217207511-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=48
+2021-03-08 13:41:16.866 INFO  (qtp1217207511-69) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=39
+2021-03-08 13:41:20.704 INFO  (qtp1217207511-69) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1615210099614} status=0 QTime=0
+2021-03-08 13:41:20.704 INFO  (qtp1217207511-55) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1615210128180} status=0 QTime=0
+2021-03-08 13:41:20.706 INFO  (qtp1217207511-51) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1615210099614&ts=1615210099614} status=503 QTime=0
+2021-03-08 13:41:20.707 INFO  (qtp1217207511-23) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/replication params={wt=json&command=details&_=1615210880692} status=0 QTime=3
+2021-03-08 13:41:20.771 INFO  (qtp1217207511-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1615210099614} status=0 QTime=67
+2021-03-08 13:41:20.777 INFO  (qtp1217207511-72) [   x:Search_Twitter] o.a.s.c.S.Request [Search_Twitter]  webapp=/solr path=/admin/system params={wt=json&_=1615210880692} status=0 QTime=73
